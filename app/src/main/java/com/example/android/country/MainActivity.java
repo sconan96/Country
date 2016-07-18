@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String krinformation(boolean krbp, boolean krba, boolean krbc, boolean krbl, boolean krbf, boolean krbg) {
-        String krdataMessage = "Information";
+        String krdataMessage = "Information: \n\n";
         if(krbp)
             krdataMessage += "\nPopulation(Thousand):  " + koreapopulation;
         if(krba)
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String chinformation(boolean chbp, boolean chba, boolean chbc, boolean chbl, boolean chbf, boolean chbg) {
-        String chdataMessage = "Information";
+        String chdataMessage = "Information: \n\n";
         if(chbp)
             chdataMessage += "\nPopulation (Thousand):  " + chinapopulation;
         if(chba)
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String jpinformation(boolean jpbp, boolean jpba, boolean jpbc, boolean jpbl, boolean jpbf, boolean jpbg) {
-        String jpdataMessage = "Information";
+        String jpdataMessage = "Information: \n\n";
         if(jpbp)
             jpdataMessage += "\nPopulation(Thousand):  " + japanpopulation;
         if(jpba)
@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String usinformation(boolean usbp, boolean usba, boolean usbc, boolean usbl, boolean usbf, boolean usbg) {
-        String usdataMessage = "Information";
+        String usdataMessage = "Information:\n\n";
         if(usbp)
             usdataMessage += "\nPopulation(Thousand):  " + usapopulation;
         if(usba)
@@ -294,7 +294,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String hkinformation(boolean hkbp, boolean hkba, boolean hkbc, boolean hkbl, boolean hkbf, boolean hkbg) {
-        String hkdataMessage = "Information";
+        String hkdataMessage = "Information: \n\n";
         if(hkbp)
             hkdataMessage += "\nPopulation(Thousand):  " + hongkongpopulation;
         if(hkba)
