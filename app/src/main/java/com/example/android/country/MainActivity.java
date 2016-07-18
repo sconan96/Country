@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         if(krbc)
             krdataMessage += "\nCapital City:  " + koreacapital;
         if(krbl)
-            krdataMessage += "\nCapital Language:  " + korealanguage;
+            krdataMessage += "\nLanguage:  " + korealanguage;
         if(krbf)
             krdataMessage += "\nFood:  " + koreafood;
         if(krbg)
