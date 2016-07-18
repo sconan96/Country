@@ -42,7 +42,6 @@
             android:src="@drawable/korea"/>
 
         <CheckBox
-
             android:id="@+id/krpopulation_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +61,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/krcapital_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +70,15 @@
             android:textSize="16sp"/>
 
         <CheckBox
+            android:id="@+id/krfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
 
+        <CheckBox
             android:id="@+id/krgdp_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +110,7 @@
             android:layout_marginBottom="5dp"
             android:text="China"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <ImageView
             android:id="@+id/china"
@@ -112,10 +118,9 @@
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/china" />
+            android:src="@drawable/china"/>
 
         <CheckBox
-
             android:id="@+id/chpopulation_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,7 +130,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/charea_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -135,7 +139,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/chcapital_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +148,15 @@
             android:textSize="16sp"/>
 
         <CheckBox
+            android:id="@+id/chfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
 
+        <CheckBox
             android:id="@+id/chgdp_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -177,7 +188,7 @@
             android:layout_marginBottom="5dp"
             android:text="Japan"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <ImageView
             android:id="@+id/japan"
@@ -185,10 +196,9 @@
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/japan" />
+            android:src="@drawable/japan"/>
 
         <CheckBox
-
             android:id="@+id/jppopulation_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -198,7 +208,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/jparea_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -208,7 +217,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/jpcapital_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -218,7 +226,15 @@
             android:textSize="16sp"/>
 
         <CheckBox
+            android:id="@+id/jpfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
 
+        <CheckBox
             android:id="@+id/jpgdp_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -250,7 +266,7 @@
             android:layout_marginBottom="5dp"
             android:text="U.S.A."
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <ImageView
             android:id="@+id/usa"
@@ -258,7 +274,7 @@
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/usa" />
+            android:src="@drawable/usa"/>
 
         <CheckBox
 
@@ -271,7 +287,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/usarea_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -281,7 +296,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/uscapital_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -291,7 +305,15 @@
             android:textSize="16sp"/>
 
         <CheckBox
+            android:id="@+id/usfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
 
+        <CheckBox
             android:id="@+id/usgdp_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -323,7 +345,7 @@
             android:layout_marginBottom="5dp"
             android:text="Hong Kong"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
         <ImageView
             android:id="@+id/hongkong"
@@ -331,10 +353,9 @@
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/hongkong" />
+            android:src="@drawable/hongkong"/>
 
         <CheckBox
-
             android:id="@+id/hkpopulation_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -344,7 +365,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/hkarea_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -354,7 +374,6 @@
             android:textSize="16sp"/>
 
         <CheckBox
-
             android:id="@+id/hkcapital_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -364,7 +383,15 @@
             android:textSize="16sp"/>
 
         <CheckBox
+            android:id="@+id/hkfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
 
+        <CheckBox
             android:id="@+id/hkgdp_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
