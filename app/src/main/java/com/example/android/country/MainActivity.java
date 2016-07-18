@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
         if(jpbc)
             jpdataMessage += "\nCapital City:  " + japancapital;
         if(jpbl)
-            jpdataMessage += "\nCapital City:  " + japanlanguage;
+            jpdataMessage += "\nLanguage:  " + japanlanguage;
         if(jpbf)
             jpdataMessage += "\nFood:  " + japanfood;
         if(jpbg)
