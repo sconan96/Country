@@ -82,13 +82,13 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/krinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Information"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textAllCaps="true"/>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/krshow"
@@ -155,13 +155,13 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/chinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Information"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textAllCaps="true"/>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/chshow"
@@ -228,13 +228,13 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/jpinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Information"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textAllCaps="true"/>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/jpshow"
@@ -301,13 +301,13 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/usinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Information"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textAllCaps="true"/>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/usshow"
@@ -374,13 +374,13 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/hkinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Information"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textAllCaps="true"/>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/hkshow"

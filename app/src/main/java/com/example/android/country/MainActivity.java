@@ -19,7 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void krShow(View view) {
+    int koreapopulation = 50617045;
+    int koreaarea = 100210;
+    String koreacapital = "Seoul";
+    double koreagdp = 1.31;
+
+
+    public void showKorea(View view) {
         CheckBox krPopulationCheckBox = (CheckBox) findViewById(R.id.krpopulation_checkbox);
         boolean krpopulation = krPopulationCheckBox.isChecked();
         Log.v("MainActivity", "Population: " + krpopulation);
@@ -29,28 +35,34 @@ public class MainActivity extends AppCompatActivity {
         Log.v("MainActivity", "Area: " + krarea);
 
         CheckBox krCapitalCheckBox = (CheckBox) findViewById(R.id.krcapital_checkbox);
-        boolean krcaptial = krCapitalCheckBox.isChecked();
-        Log.v("MainActivity", "Capital: " + krcaptial);
+        boolean krcapital = krCapitalCheckBox.isChecked();
+        Log.v("MainActivity", "Capital: " + krcapital);
 
         CheckBox krGdpCheckBox = (CheckBox) findViewById(R.id.krgdp_checkbox);
         boolean krgdp = krGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + krgdp);
 
-
-        String krdataMessage = krinfor(krpopulation, krarea, krcaptial, krgdp);
+        String krdataMessage = krinformation(krpopulation, krarea, krcapital, krgdp);
         displayMessage(krdataMessage);
 
     }
 
-    private String krinfor() {
-        krdataMessage += "\nPopulation: " + ;
-        krdataMessage += "\nArea: " + ;
-        krdataMessage += "\nCapital City " + ;
-        krdataMessage += "\nGDP " + ;
+    private String krinformation(boolean krbp, boolean krba, boolean krbc, boolean krbg) {
+        String krdataMessage = "Information";
+        if(krbp)
+            krdataMessage += "\nPopulation: " + koreapopulation;
+        if(krba)
+            krdataMessage += "\nArea(km2): " + koreaarea;
+        if(krbc)
+            krdataMessage += "\nCapital City: " + koreacapital;
+        if(krbg)
+            krdataMessage += "\nGDP(trillion$): " + koreagdp;
         return krdataMessage;
     }
 
     private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
+        TextView KoreaTextView = (TextView) findViewById(R.id.krinfo);
+        KoreaTextView.setText(message);
+    }
+
 }
