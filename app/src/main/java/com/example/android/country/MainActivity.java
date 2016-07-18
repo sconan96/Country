@@ -22,14 +22,32 @@ public class MainActivity extends AppCompatActivity {
     int koreapopulation = 50617045;
     int koreaarea = 100210;
     String koreacapital = "Seoul";
-    double koreagdp = 1.31;
     String koreafood = "Kimchi";
+    double koreagdp = 1.31;
 
     int chinapopulation = 1382323332;
     int chinaarea = 9640821;
     String chinacapital = "Beijing";
-    double chinagdp = 9.24;
     String chinafood = "huǒguō";
+    double chinagdp = 9.24;
+
+    int japanpopulation = 126919659;
+    int japanarea = 377962;
+    String japancapital = "Tokyo";
+    String japanfood = "Sushi";
+    double japangdp = 4.92;
+
+    int usapopulation = 321368864;
+    int usaarea = 9826675;
+    String usacapital = "Washington D.C.";
+    String usafood = "Steak";
+    double usagdp = 16.77;
+
+    int hongkongpopulation = 7234831;
+    int hongkongarea = 2755;
+    String hongkongcapital = "Hong Kong";
+    String hongkongfood = "Dim Sum";
+    double hongkonggdp = 0.28;
 
 
     public void showKorea(View view) {
@@ -105,23 +123,161 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String chinformation(boolean chbp, boolean chba, boolean chbc, boolean chbf, boolean chbg) {
-        String krdataMessage = "Information";
+        String chdataMessage = "Information";
         if(chbp)
-            krdataMessage += "\nPopulation:  " + chinapopulation;
+            chdataMessage += "\nPopulation:  " + chinapopulation;
         if(chba)
-            krdataMessage += "\nArea(km2):  " + chinaarea;
+            chdataMessage += "\nArea(km2):  " + chinaarea;
         if(chbc)
-            krdataMessage += "\nCapital City:  " + chinacapital;
+            chdataMessage += "\nCapital City:  " + chinacapital;
         if(chbf)
-            krdataMessage += "\nFood:  " + chinafood;
+            chdataMessage += "\nFood:  " + chinafood;
         if(chbg)
-            krdataMessage += "\nGDP(Trillion$):  " + chinagdp;
-        return krdataMessage;
+            chdataMessage += "\nGDP(Trillion$):  " + chinagdp;
+        return chdataMessage;
     }
 
     private void displayMessage02(String message) {
         TextView ChinaTextView = (TextView) findViewById(R.id.chinfo);
         ChinaTextView.setText(message);
+    }
+
+    public void showJapan(View view) {
+        CheckBox jpPopulationCheckBox = (CheckBox) findViewById(R.id.jppopulation_checkbox);
+        boolean jppopulation = jpPopulationCheckBox.isChecked();
+        Log.v("MainActivity", "Population: " + jppopulation);
+
+        CheckBox jpAreaCheckBox = (CheckBox) findViewById(R.id.jparea_checkbox);
+        boolean jparea = jpAreaCheckBox.isChecked();
+        Log.v("MainActivity", "Area: " + jparea);
+
+        CheckBox jpCapitalCheckBox = (CheckBox) findViewById(R.id.jpcapital_checkbox);
+        boolean jpcapital = jpCapitalCheckBox.isChecked();
+        Log.v("MainActivity", "Capital: " + jpcapital);
+
+        CheckBox jpFoodCheckBox = (CheckBox) findViewById(R.id.jpfood_checkbox);
+        boolean jpfood = jpFoodCheckBox.isChecked();
+        Log.v("MainActivity", "Food: " + jpfood);
+
+        CheckBox jpGdpCheckBox = (CheckBox) findViewById(R.id.jpgdp_checkbox);
+        boolean jpgdp = jpGdpCheckBox.isChecked();
+        Log.v("MainActivity", "GDP: " + jpgdp);
+
+        String jpdataMessage = jpinformation(jppopulation, jparea, jpcapital, jpfood, jpgdp);
+        displayMessage03(jpdataMessage);
+
+    }
+
+    private String jpinformation(boolean jpbp, boolean jpba, boolean jpbc, boolean jpbf, boolean jpbg) {
+        String jpdataMessage = "Information";
+        if(jpbp)
+            jpdataMessage += "\nPopulation:  " + japanpopulation;
+        if(jpba)
+            jpdataMessage += "\nArea(km2):  " + japanarea;
+        if(jpbc)
+            jpdataMessage += "\nCapital City:  " + japancapital;
+        if(jpbf)
+            jpdataMessage += "\nFood:  " + japanfood;
+        if(jpbg)
+            jpdataMessage += "\nGDP(Trillion$):  " + japangdp;
+        return jpdataMessage;
+    }
+
+    private void displayMessage03(String message) {
+        TextView JapanTextView = (TextView) findViewById(R.id.jpinfo);
+        JapanTextView.setText(message);
+    }
+
+    public void showUsa(View view) {
+        CheckBox usPopulationCheckBox = (CheckBox) findViewById(R.id.uspopulation_checkbox);
+        boolean uspopulation = usPopulationCheckBox.isChecked();
+        Log.v("MainActivity", "Population: " + uspopulation);
+
+        CheckBox usAreaCheckBox = (CheckBox) findViewById(R.id.usarea_checkbox);
+        boolean usarea = usAreaCheckBox.isChecked();
+        Log.v("MainActivity", "Area: " + usarea);
+
+        CheckBox usCapitalCheckBox = (CheckBox) findViewById(R.id.uscapital_checkbox);
+        boolean uscapital = usCapitalCheckBox.isChecked();
+        Log.v("MainActivity", "Capital: " + uscapital);
+
+        CheckBox usFoodCheckBox = (CheckBox) findViewById(R.id.usfood_checkbox);
+        boolean usfood = usFoodCheckBox.isChecked();
+        Log.v("MainActivity", "Food: " + usfood);
+
+        CheckBox usGdpCheckBox = (CheckBox) findViewById(R.id.usgdp_checkbox);
+        boolean usgdp = usGdpCheckBox.isChecked();
+        Log.v("MainActivity", "GDP: " + usgdp);
+
+        String usdataMessage = usinformation(uspopulation, usarea, uscapital, usfood, usgdp);
+        displayMessage04(usdataMessage);
+
+    }
+
+    private String usinformation(boolean usbp, boolean usba, boolean usbc, boolean usbf, boolean usbg) {
+        String usdataMessage = "Information";
+        if(usbp)
+            usdataMessage += "\nPopulation:  " + usapopulation;
+        if(usba)
+            usdataMessage += "\nArea(km2):  " + usaarea;
+        if(usbc)
+            usdataMessage += "\nCapital City:  " + usacapital;
+        if(usbf)
+            usdataMessage += "\nFood:  " + usafood;
+        if(usbg)
+            usdataMessage += "\nGDP(Trillion$):  " + usagdp;
+        return usdataMessage;
+    }
+
+    private void displayMessage04(String message) {
+        TextView UsaTextView = (TextView) findViewById(R.id.usinfo);
+        UsaTextView.setText(message);
+    }
+
+    public void showHongkong(View view) {
+        CheckBox hkPopulationCheckBox = (CheckBox) findViewById(R.id.hkpopulation_checkbox);
+        boolean hkpopulation = hkPopulationCheckBox.isChecked();
+        Log.v("MainActivity", "Population: " + hkpopulation);
+
+        CheckBox hkAreaCheckBox = (CheckBox) findViewById(R.id.hkarea_checkbox);
+        boolean hkarea = hkAreaCheckBox.isChecked();
+        Log.v("MainActivity", "Area: " + hkarea);
+
+        CheckBox hkCapitalCheckBox = (CheckBox) findViewById(R.id.hkcapital_checkbox);
+        boolean hkcapital = hkCapitalCheckBox.isChecked();
+        Log.v("MainActivity", "Capital: " + hkcapital);
+
+        CheckBox hkFoodCheckBox = (CheckBox) findViewById(R.id.hkfood_checkbox);
+        boolean hkfood = hkFoodCheckBox.isChecked();
+        Log.v("MainActivity", "Food: " + hkfood);
+
+        CheckBox hkGdpCheckBox = (CheckBox) findViewById(R.id.hkgdp_checkbox);
+        boolean hkgdp = hkGdpCheckBox.isChecked();
+        Log.v("MainActivity", "GDP: " + hkgdp);
+
+        String hkdataMessage = hkinformation(hkpopulation, hkarea, hkcapital, hkfood, hkgdp);
+        displayMessage05(hkdataMessage);
+
+    }
+
+    private String hkinformation(boolean hkbp, boolean hkba, boolean hkbc, boolean hkbf, boolean hkbg) {
+        String hkdataMessage = "Information";
+        if(hkbp)
+            hkdataMessage += "\nPopulation:  " + hongkongpopulation;
+        if(hkba)
+            hkdataMessage += "\nArea(km2):  " + hongkongarea;
+        if(hkbc)
+            hkdataMessage += "\nCapital City:  " + hongkongcapital;
+        if(hkbf)
+            hkdataMessage += "\nFood:  " + hongkongfood;
+        if(hkbg)
+            hkdataMessage += "\nGDP(Trillion$):  " + hongkonggdp;
+        return hkdataMessage;
+    }
+
+    private void displayMessage05(String message) {
+        TextView HongkongTextView = (TextView) findViewById(R.id.hkinfo);
+        HongkongTextView.setText(message);
     }
 
 }
