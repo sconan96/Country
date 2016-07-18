@@ -37,7 +37,7 @@
             android:id="@+id/korea"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="centerCrop"
             android:src="@drawable/korea"/>
 
@@ -67,6 +67,15 @@
             android:paddingLeft="8dp"
             android:layout_marginBottom="5dp"
             android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/krlanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
             android:textSize="16sp"/>
 
         <CheckBox
@@ -116,7 +125,7 @@
             android:id="@+id/china"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="centerCrop"
             android:src="@drawable/china"/>
 
@@ -145,6 +154,15 @@
             android:paddingLeft="8dp"
             android:layout_marginBottom="5dp"
             android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/chlanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
             android:textSize="16sp"/>
 
         <CheckBox
@@ -194,7 +212,7 @@
             android:id="@+id/japan"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="centerCrop"
             android:src="@drawable/japan"/>
 
@@ -223,6 +241,15 @@
             android:paddingLeft="8dp"
             android:layout_marginBottom="5dp"
             android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/jplanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
             android:textSize="16sp"/>
 
         <CheckBox
@@ -272,7 +299,7 @@
             android:id="@+id/usa"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="centerCrop"
             android:src="@drawable/usa"/>
 
@@ -302,6 +329,15 @@
             android:paddingLeft="8dp"
             android:layout_marginBottom="5dp"
             android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/uslanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
             android:textSize="16sp"/>
 
         <CheckBox
@@ -351,7 +387,7 @@
             android:id="@+id/hongkong"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="centerCrop"
             android:src="@drawable/hongkong"/>
 
@@ -380,6 +416,15 @@
             android:paddingLeft="8dp"
             android:layout_marginBottom="5dp"
             android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hklanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
             android:textSize="16sp"/>
 
         <CheckBox

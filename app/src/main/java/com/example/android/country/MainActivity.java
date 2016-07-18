@@ -19,33 +19,38 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int koreapopulation = 50617045;
-    int koreaarea = 100210;
+    double koreapopulation = 50617.1;
+    double koreaarea = 100.2;
     String koreacapital = "Seoul";
+    String korealanguage = "Korean";
     String koreafood = "Kimchi";
     double koreagdp = 1.31;
 
-    int chinapopulation = 1382323332;
-    int chinaarea = 9640821;
+    double chinapopulation = 1382323.4;
+    double chinaarea = 9640.8;
     String chinacapital = "Beijing";
+    String chinalanguage = "Chinese";
     String chinafood = "huǒguō";
     double chinagdp = 9.24;
 
-    int japanpopulation = 126919659;
-    int japanarea = 377962;
+    double japanpopulation = 126919.7;
+    double japanarea = 377.9;
     String japancapital = "Tokyo";
+    String japanlanguage = "Japanese";
     String japanfood = "Sushi";
     double japangdp = 4.92;
 
-    int usapopulation = 321368864;
-    int usaarea = 9826675;
+    double usapopulation = 321368.9;
+    double usaarea = 9826.7;
     String usacapital = "Washington D.C.";
+    String usalanguage = "English";
     String usafood = "Steak";
     double usagdp = 16.77;
 
-    int hongkongpopulation = 7234831;
-    int hongkongarea = 2755;
+    double hongkongpopulation = 7234.8;
+    double hongkongarea = 2.8;
     String hongkongcapital = "Hong Kong";
+    String hongkonglanguage = "Chinese / English";
     String hongkongfood = "Dim Sum";
     double hongkonggdp = 0.28;
 
@@ -63,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         boolean krcapital = krCapitalCheckBox.isChecked();
         Log.v("MainActivity", "Capital: " + krcapital);
 
+        CheckBox krLanguageCheckBox = (CheckBox) findViewById(R.id.krlanguage_checkbox);
+        boolean krlanguage = krLanguageCheckBox.isChecked();
+        Log.v("MainActivity", "Language: " + krlanguage);
+
         CheckBox krFoodCheckBox = (CheckBox) findViewById(R.id.krfood_checkbox);
         boolean krfood = krFoodCheckBox.isChecked();
         Log.v("MainActivity", "Food: " + krfood);
@@ -71,23 +80,25 @@ public class MainActivity extends AppCompatActivity {
         boolean krgdp = krGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + krgdp);
 
-        String krdataMessage = krinformation(krpopulation, krarea, krcapital, krfood, krgdp);
+        String krdataMessage = krinformation(krpopulation, krarea, krcapital, krlanguage, krfood, krgdp);
         displayMessage01(krdataMessage);
 
     }
 
-    private String krinformation(boolean krbp, boolean krba, boolean krbc, boolean krbf, boolean krbg) {
+    private String krinformation(boolean krbp, boolean krba, boolean krbc, boolean krbl, boolean krbf, boolean krbg) {
         String krdataMessage = "Information";
         if(krbp)
-            krdataMessage += "\nPopulation:  " + koreapopulation;
+            krdataMessage += "\nPopulation(Thousand):  " + koreapopulation;
         if(krba)
-            krdataMessage += "\nArea(km2):  " + koreaarea;
+            krdataMessage += "\nArea(Thousand km2):  " + koreaarea;
         if(krbc)
             krdataMessage += "\nCapital City:  " + koreacapital;
+        if(krbl)
+            krdataMessage += "\nCapital Language:  " + korealanguage;
         if(krbf)
             krdataMessage += "\nFood:  " + koreafood;
         if(krbg)
-            krdataMessage += "\nGDP(Trillion$):  " + koreagdp;
+            krdataMessage += "\nGDP(Trillion $):  " + koreagdp;
         return krdataMessage;
     }
 
@@ -109,6 +120,10 @@ public class MainActivity extends AppCompatActivity {
         boolean chcapital = chCapitalCheckBox.isChecked();
         Log.v("MainActivity", "Capital: " + chcapital);
 
+        CheckBox chLanguageCheckBox = (CheckBox) findViewById(R.id.chlanguage_checkbox);
+        boolean chlanguage = chLanguageCheckBox.isChecked();
+        Log.v("MainActivity", "Language: " + chlanguage);
+
         CheckBox chFoodCheckBox = (CheckBox) findViewById(R.id.chfood_checkbox);
         boolean chfood = chFoodCheckBox.isChecked();
         Log.v("MainActivity", "Food: " + chfood);
@@ -117,23 +132,25 @@ public class MainActivity extends AppCompatActivity {
         boolean chgdp = chGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + chgdp);
 
-        String chdataMessage = chinformation(chpopulation, charea, chcapital, chfood, chgdp);
+        String chdataMessage = chinformation(chpopulation, charea, chcapital, chlanguage, chfood, chgdp);
         displayMessage02(chdataMessage);
 
     }
 
-    private String chinformation(boolean chbp, boolean chba, boolean chbc, boolean chbf, boolean chbg) {
+    private String chinformation(boolean chbp, boolean chba, boolean chbc, boolean chbl, boolean chbf, boolean chbg) {
         String chdataMessage = "Information";
         if(chbp)
-            chdataMessage += "\nPopulation:  " + chinapopulation;
+            chdataMessage += "\nPopulation (Thousand):  " + chinapopulation;
         if(chba)
-            chdataMessage += "\nArea(km2):  " + chinaarea;
+            chdataMessage += "\nArea(Thousand km2):  " + chinaarea;
         if(chbc)
             chdataMessage += "\nCapital City:  " + chinacapital;
+        if(chbl)
+            chdataMessage += "\nLanguage:  " + chinalanguage;
         if(chbf)
             chdataMessage += "\nFood:  " + chinafood;
         if(chbg)
-            chdataMessage += "\nGDP(Trillion$):  " + chinagdp;
+            chdataMessage += "\nGDP(Trillion $):  " + chinagdp;
         return chdataMessage;
     }
 
@@ -155,6 +172,10 @@ public class MainActivity extends AppCompatActivity {
         boolean jpcapital = jpCapitalCheckBox.isChecked();
         Log.v("MainActivity", "Capital: " + jpcapital);
 
+        CheckBox jpLanguageCheckBox = (CheckBox) findViewById(R.id.jplanguage_checkbox);
+        boolean jplanguage = jpLanguageCheckBox.isChecked();
+        Log.v("MainActivity", "Language: " + jplanguage);
+
         CheckBox jpFoodCheckBox = (CheckBox) findViewById(R.id.jpfood_checkbox);
         boolean jpfood = jpFoodCheckBox.isChecked();
         Log.v("MainActivity", "Food: " + jpfood);
@@ -163,23 +184,25 @@ public class MainActivity extends AppCompatActivity {
         boolean jpgdp = jpGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + jpgdp);
 
-        String jpdataMessage = jpinformation(jppopulation, jparea, jpcapital, jpfood, jpgdp);
+        String jpdataMessage = jpinformation(jppopulation, jparea, jpcapital, jplanguage, jpfood, jpgdp);
         displayMessage03(jpdataMessage);
 
     }
 
-    private String jpinformation(boolean jpbp, boolean jpba, boolean jpbc, boolean jpbf, boolean jpbg) {
+    private String jpinformation(boolean jpbp, boolean jpba, boolean jpbc, boolean jpbl, boolean jpbf, boolean jpbg) {
         String jpdataMessage = "Information";
         if(jpbp)
-            jpdataMessage += "\nPopulation:  " + japanpopulation;
+            jpdataMessage += "\nPopulation(Thousand):  " + japanpopulation;
         if(jpba)
-            jpdataMessage += "\nArea(km2):  " + japanarea;
+            jpdataMessage += "\nArea(Thousand km2):  " + japanarea;
         if(jpbc)
             jpdataMessage += "\nCapital City:  " + japancapital;
+        if(jpbl)
+            jpdataMessage += "\nCapital City:  " + japanlanguage;
         if(jpbf)
             jpdataMessage += "\nFood:  " + japanfood;
         if(jpbg)
-            jpdataMessage += "\nGDP(Trillion$):  " + japangdp;
+            jpdataMessage += "\nGDP(Trillion $):  " + japangdp;
         return jpdataMessage;
     }
 
@@ -201,6 +224,10 @@ public class MainActivity extends AppCompatActivity {
         boolean uscapital = usCapitalCheckBox.isChecked();
         Log.v("MainActivity", "Capital: " + uscapital);
 
+        CheckBox usLanguageCheckBox = (CheckBox) findViewById(R.id.uslanguage_checkbox);
+        boolean uslanguage = usLanguageCheckBox.isChecked();
+        Log.v("MainActivity", "Language: " + uslanguage);
+
         CheckBox usFoodCheckBox = (CheckBox) findViewById(R.id.usfood_checkbox);
         boolean usfood = usFoodCheckBox.isChecked();
         Log.v("MainActivity", "Food: " + usfood);
@@ -209,23 +236,25 @@ public class MainActivity extends AppCompatActivity {
         boolean usgdp = usGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + usgdp);
 
-        String usdataMessage = usinformation(uspopulation, usarea, uscapital, usfood, usgdp);
+        String usdataMessage = usinformation(uspopulation, usarea, uscapital, uslanguage, usfood, usgdp);
         displayMessage04(usdataMessage);
 
     }
 
-    private String usinformation(boolean usbp, boolean usba, boolean usbc, boolean usbf, boolean usbg) {
+    private String usinformation(boolean usbp, boolean usba, boolean usbc, boolean usbl, boolean usbf, boolean usbg) {
         String usdataMessage = "Information";
         if(usbp)
-            usdataMessage += "\nPopulation:  " + usapopulation;
+            usdataMessage += "\nPopulation(Thousand):  " + usapopulation;
         if(usba)
-            usdataMessage += "\nArea(km2):  " + usaarea;
+            usdataMessage += "\nArea(Thousand km2):  " + usaarea;
         if(usbc)
             usdataMessage += "\nCapital City:  " + usacapital;
+        if(usbl)
+            usdataMessage += "\nLanguage:  " + usalanguage;
         if(usbf)
             usdataMessage += "\nFood:  " + usafood;
         if(usbg)
-            usdataMessage += "\nGDP(Trillion$):  " + usagdp;
+            usdataMessage += "\nGDP(Trillion $):  " + usagdp;
         return usdataMessage;
     }
 
@@ -247,6 +276,10 @@ public class MainActivity extends AppCompatActivity {
         boolean hkcapital = hkCapitalCheckBox.isChecked();
         Log.v("MainActivity", "Capital: " + hkcapital);
 
+        CheckBox hkLanguageCheckBox = (CheckBox) findViewById(R.id.hklanguage_checkbox);
+        boolean hklanguage = hkLanguageCheckBox.isChecked();
+        Log.v("MainActivity", "Language: " + hklanguage);
+
         CheckBox hkFoodCheckBox = (CheckBox) findViewById(R.id.hkfood_checkbox);
         boolean hkfood = hkFoodCheckBox.isChecked();
         Log.v("MainActivity", "Food: " + hkfood);
@@ -255,23 +288,25 @@ public class MainActivity extends AppCompatActivity {
         boolean hkgdp = hkGdpCheckBox.isChecked();
         Log.v("MainActivity", "GDP: " + hkgdp);
 
-        String hkdataMessage = hkinformation(hkpopulation, hkarea, hkcapital, hkfood, hkgdp);
+        String hkdataMessage = hkinformation(hkpopulation, hkarea, hkcapital, hklanguage, hkfood, hkgdp);
         displayMessage05(hkdataMessage);
 
     }
 
-    private String hkinformation(boolean hkbp, boolean hkba, boolean hkbc, boolean hkbf, boolean hkbg) {
+    private String hkinformation(boolean hkbp, boolean hkba, boolean hkbc, boolean hkbl, boolean hkbf, boolean hkbg) {
         String hkdataMessage = "Information";
         if(hkbp)
-            hkdataMessage += "\nPopulation:  " + hongkongpopulation;
+            hkdataMessage += "\nPopulation(Thousand):  " + hongkongpopulation;
         if(hkba)
-            hkdataMessage += "\nArea(km2):  " + hongkongarea;
+            hkdataMessage += "\nArea(Thousand km2):  " + hongkongarea;
         if(hkbc)
             hkdataMessage += "\nCapital City:  " + hongkongcapital;
+        if(hkbl)
+            hkdataMessage += "\nLanguage:  " + hongkonglanguage;
         if(hkbf)
             hkdataMessage += "\nFood:  " + hongkongfood;
         if(hkbg)
-            hkdataMessage += "\nGDP(Trillion$):  " + hongkonggdp;
+            hkdataMessage += "\nGDP(Trillion $):  " + hongkonggdp;
         return hkdataMessage;
     }
 
