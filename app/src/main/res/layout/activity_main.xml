@@ -100,7 +100,7 @@
             android:id="@+id/krshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="100dp"
             android:text="Show"
             android:onClick="showKorea"/>
 
@@ -178,7 +178,7 @@
             android:id="@+id/chshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="100dp"
             android:text="Show"
             android:onClick="showChina"/>
 
@@ -256,7 +256,7 @@
             android:id="@+id/jpshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="100dp"
             android:text="Show"
             android:onClick="showJapan"/>
 
@@ -335,7 +335,7 @@
             android:id="@+id/usshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="100dp"
             android:text="Show"
             android:onClick="showUsa"/>
 
@@ -413,7 +413,7 @@
             android:id="@+id/hkshow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="30dp"
             android:text="Show"
             android:onClick="showHongkong"/>
 
