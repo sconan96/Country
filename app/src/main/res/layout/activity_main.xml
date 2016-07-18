@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -38,7 +39,7 @@
             android:layout_height="150dp"
             android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/korea" />
+            android:src="@drawable/korea"/>
 
         <CheckBox
 
@@ -76,9 +77,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="20dp"
             android:text="GDP"
             android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/krshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Show"
+            android:onClick="showKorea"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -132,9 +150,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="20dp"
             android:text="GDP"
             android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/chshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Show"
+            android:onClick="showChina"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -188,9 +223,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="20dp"
             android:text="GDP"
             android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/jpshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Show"
+            android:onClick="showJapan"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -244,9 +296,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="20dp"
             android:text="GDP"
             android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/usshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Show"
+            android:onClick="showUsa"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -300,9 +369,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="20dp"
             android:text="GDP"
             android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/hkshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Show"
+            android:onClick="showHongkong"/>
 
     </LinearLayout>
 
