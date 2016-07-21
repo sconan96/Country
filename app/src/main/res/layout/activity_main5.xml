@@ -1,0 +1,115 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Hong Kong"
+            android:textColor="#000000"
+            android:textSize="40sp"/>
+
+        <ImageView
+            android:id="@+id/hongkong"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hongkong"/>
+
+        <CheckBox
+            android:id="@+id/hkpopulation_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Population"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hkarea_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Area"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hkcapital_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Capital City"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hklanguage_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Language"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hkfood_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Food"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/hkgdp_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="30dp"
+            android:text="GDP"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/hkinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/hkshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Show"
+            android:onClick="showHongkong"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/button05"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>
