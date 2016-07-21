@@ -29,7 +29,7 @@
             android:id="@+id/korea1"
             android:layout_width="240dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/korea"/>
 
@@ -37,7 +37,7 @@
             android:id="@+id/china1"
             android:layout_width="240dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/china"/>
 
@@ -45,7 +45,7 @@
             android:id="@+id/japan1"
             android:layout_width="240dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/japan"/>
 
@@ -53,7 +53,7 @@
             android:id="@+id/usa1"
             android:layout_width="240dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/usa"/>
 
@@ -61,7 +61,7 @@
             android:id="@+id/hongkong1"
             android:layout_width="240dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/hongkong"/>
 
